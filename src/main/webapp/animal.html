@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Animal Insert</title>
+<style>
+body {
+
+ width:1500px;
+ height: 750px;
+ background-image: url('images/zoo.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+ display: flex;
+ justify-content:center;
+ 
+}
+input{
+float:right;
+ border: 2px solid #C0C0C0;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+}
+.btn{
+width: 70px;
+    height: 50px;
+    background-color: #cccccc;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-left:20px;
+}
+label{
+color:blue;
+font-size: 150%;
+}
+</style>
+</head>
+<body>
+<form action="animal_action.jsp" style="margin-top:120px;">
+<br><br>
+<label >Animal Name:</label> <input type="text" name="animalname" required>
+<br><br><br>
+<label>Gender:</label><input type="text" name="gender" required>
+<br><br><br>
+<label>Year:</label><input type="text" name="year" required>
+<br><br><br>
+<label>Sid:</label><input type="text" name="speciesId" required>
+<br><br><br>
+<label>Did:</label><input type="text" name="dietId" required>
+<br><br><br>
+<label>Eid:</label><input type="text" name="enclosureId" required>
+<br><br><br>
+<label>Kid:</label><input type="text" name="keeperId" required>
+<br><br><br>
+<input type="submit" value="Save" class="btn">
+<input type="reset" value="Resert" class="btn">
+</form>
+</body>
+</html>

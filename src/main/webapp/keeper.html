@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Keeper Insert</title>
+<style >
+body {
+top:50px;
+ width:100%;
+ height: 100%;
+ background-image: url('images/keeper.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: center;
+ display: flex;
+ justify-content:center;
+}
+input{
+float:right;
+ border: 2px solid #000000;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+}
+.btn{
+width: 70px;
+    height: 50px;
+    background-color: #cccccc;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-left:20px;
+}
+label{
+color:blue;
+font-size: 150%;
+}
+</style>
+</head>
+<body>
+<form action="keeper_action.jsp" style="margin-top:180px;">
+<br>
+<label>Keeper Name:</label><input type="text" name="name" required>
+<br><br><br>
+<label>Date of Birth:</label><input type="date" name="date" required>
+<br><br><br>
+<label>Keeper Email:</label><input type="text" name="email" required>
+<br><br><br>
+<label>Keeper Phone:</label><input type="text" name="phone" required>
+<br><br><br>
+<label>Keeper Rank:</label><input type="text" name="rank" required>
+<br><br><br>
+<input type="submit" value="Save" class="btn">
+<input type="reset" value="Resert" class="btn">
+</form>
+</body>
+</html>

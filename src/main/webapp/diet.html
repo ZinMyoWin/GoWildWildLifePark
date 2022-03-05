@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Diet Insert</title>
+<style>
+body {
+top:50px;
+ width:1066px;
+ height: 706px;
+ background-image: url('images/DIETS.png');
+ background-repeat: no-repeat;
+ 
+ text-align: center;
+ display: flex;
+ justify-content:center;
+}
+input{
+float:right;
+border: 2px solid #000000;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+}
+label{
+color:#000000;
+font-size: 160%;
+}
+.btn{
+width: 70px;
+    height: 50px;
+    background-color: #cccccc;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-left:20px;
+}
+</style>
+</head>
+<body>
+<form action="diet_action.jsp" style="margin-top:250px;">
+<br>
+<label>Diet Type:</label><input type="text" name="dtype" required>
+<br><br><br>
+<label >No Of Feed:</label><input type="number" name="feed" required>
+<br><br><br>
+<input type="submit" value="Save" class="btn">
+<input type="reset" value="Resert" class="btn">
+</form>
+</body>
+</html>

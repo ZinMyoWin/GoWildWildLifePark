@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Enclosure Insert</title>
+<style >
+body {
+top:50px;
+ width:100%;
+ height: 100%;
+ background-image: url('images/enclosure.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+ display: flex;
+ justify-content:center;
+}
+input{
+float:right;
+ border: 2px solid #000000;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+}
+.btn{
+width: 70px;
+    height: 50px;
+    background-color: #cccccc;
+    font-size: 15px;
+    
+    border-radius: 20px;
+    margin-left:20px;
+}
+label{
+color:#FFFF00;
+font-size: 160%;
+}
+</style>
+</head>
+<body>
+<form action="enclosure_action.jsp" style="margin-top:150px;margin-right:250px">
+<br><br><br>
+<label>Enclosure Type:</label><input type="text" name="type" required>
+<br><br><br>
+<label>Enclosure Location:</label><input type="text" name="location" required>
+<br><br><br>
+<input type="submit" value="Save" class="btn">
+<input type="reset" value="Resert" class="btn">
+</form>
+</body>
+</html>
